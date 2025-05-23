@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewCapa"
+        android:layout_width="match_parent"
+        android:layout_height="317dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/thechosenbackground" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewSeries"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_ries"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLogo"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewLogo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLogo" />
+
+    <TextView
+        android:id="@+id/textViewFilmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filmes"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewSeries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMinhaLista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSeries"
+        app:layout_constraintTop_toTopOf="@+id/textViewSeries" />
+
+    <TextView
+        android:id="@+id/textViewMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minha_lista"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFilmes"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilmes"
+        app:layout_constraintTop_toTopOf="@+id/textViewFilmes" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoFilme"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        app:srcCompat="@drawable/Imagemlogo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10123119" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textViewEmpolgante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empolgante"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeus"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDeus"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeus" />
+
+    <TextView
+        android:id="@+id/textViewDeus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/deus"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewEsperanca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewEmpolgante"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom" />
+
+    <TextView
+        android:id="@+id/textViewEsperanca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aventura"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDeus"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewDeus"
+        app:layout_constraintTop_toTopOf="@+id/textViewDeus" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <Button
+        android:id="@+id/buttonAssistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/arrow_svg"
+        android:text="@string/assistir"
+        app:layout_constraintEnd_toStartOf="@+id/Button_detalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_minhalista"
+        app:layout_constraintTop_toBottomOf="@id/textViewDeus" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/outerbanks" />
+
+    <Button
+        android:id="@+id/button_minhalista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/add_svg"
+        android:padding="0dp"
+        android:text="@string/minha_listaad"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/buttonAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/buttonAssistir" />
+
+    <Button
+        android:id="@+id/Button_detalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/info_svg"
+        android:padding="0dp"
+        android:text="@string/detalhes"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAssistir"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonAssistir"
+        app:layout_constraintTop_toTopOf="@+id/buttonAssistir" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/lan_amento"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAssistir" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/filme3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Davi Machado Calcagno"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:srcCompat="@drawable/f1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

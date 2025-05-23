@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">netflix</string>
+    <string name="s_ries">Séries</string>
+    <string name="assistir">Assistir</string>
+    <string name="filmes">Filmes</string>
+    <string name="minha_lista">Minha Lista</string>
+    <string name="empolgante">Empolgante</string>
+    <string name="deus">Deus</string>
+    <string name="aventura">Aventura</string>
+    <string name="detalhes">DETALHES</string>
+    <string name="lan_amento">Lançamento</string>
+    <string name="minha_listaad">MINHA LISTA</string>
+</resources>
