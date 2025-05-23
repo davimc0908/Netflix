@@ -77,7 +77,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
         app:layout_constraintTop_toTopOf="@+id/guidelineTop"
-        app:srcCompat="@drawable/Imagemlogo" />
+        app:srcCompat="@drawable/imagemlogo" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineTop"
